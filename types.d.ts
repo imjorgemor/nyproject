@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 declare global {
-  interface Window {
-    fbq: any;
-    _fbq?: any;
-  }
+    interface Window {
+        fbq: typeof fbq;
+        _fbq: typeof fbq;
+    }
 }
 
-export {};
+export { };
